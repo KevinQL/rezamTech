@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEBAS REZUAM</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">Rezuam</div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#">inicio</a></li>
+                <li><a href="">servicios</a></li>
+                <li><a href="">caracteristicas</a></li>
+                <li><a href="">resenas</a></li>
+                <li><a href="">precios</a></li>
+                <li><a href="">sobre</a></li>
+            </ul>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+        
+        <a href="#" class="btn">unete</a>
+    </header>
+    
+
+    <!-- cuerpo de la pagina -->
+    <section class="intro">
+        
+        <div class="contain-text">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit magni vel expedita debitis ullam reprehenderit a maiores distinctio culpa, fugiat molestiae dolorem, laudantium temporibus quis pariatur aliquid inventore id? Enim.
+            </p>
+        </div>
+
+        <div class="contain-img">
+            <img src="https://cdn.pixabay.com/photo/2020/09/16/13/32/football-5576366__340.jpg" alt="">
+
+        </div>
+
+    </section>
+
+
+    <script>
+
+        let nav = document.querySelector(".nav");
+        let btnmenu = document.querySelector("#menu-btn");
+        
+
+        btnmenu.addEventListener("click",function() {
+            nav.classList.toggle("active")
+        })
+
+    </script>
+
+</body>
+</html>
