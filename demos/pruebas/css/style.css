@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+html::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+header {
+  background-color: #cae8e3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header .logo {
+  font-size: 2rem;
+  color: #000;
+  margin: 0 1rem;
+}
+header .nav li {
+  list-style: none;
+  display: inline-block;
+}
+header .nav li a {
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: #000;
+}
+header .nav li a:hover {
+  text-decoration: underline;
+}
+header .btn {
+  font-size: 2rem;
+  background: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-weight: bolder;
+  border: 0.2rem solid #000;
+  border-radius: 0.5rem;
+}
+header .btn:hover {
+  color: #000;
+  background: none;
+}
+
+#menu-btn {
+  cursor: pointer;
+  font-size: 3rem;
+  display: none;
+  color: #fff;
+}
+
+section {
+  padding: 5rem 9%;
+  font-size: 2.5rem;
+}
+section h1 {
+  font-size: 4rem;
+}
+
+.intro {
+  margin-top: 5rem;
+  background: #857;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .contain-text {
+  width: 720px;
+}
+.intro .contain-img {
+  border-radius: 79% 21% 70% 30%/27% 52% 48% 73%;
+  overflow: hidden;
+  background-color: #cae8e3;
+  display: block;
+  position: relative;
+  height: 400px;
+}
+.intro .contain-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: contain;
+  background-position: center;
+  background-attachment: center;
+}
+
+@media (max-width: 1027px) {
+  header {
+    padding: 1rem 3%;
+  }
+  header .nav {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    margin-top: 12%;
+    background-color: red;
+    transition: all 0.5s;
+  }
+  header .nav.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  header .nav ul li {
+    display: block;
+    width: 100vw;
+    padding: 1rem 0;
+    background-color: #cae8e3;
+  }
+  header .nav ul li a {
+    display: block;
+    width: 100%;
+  }
+  header .btn {
+    display: none;
+  }
+  header #menu-btn {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
